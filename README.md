@@ -11,8 +11,9 @@ CSS Projects:
 
 
 JS Projects:
-
-
+1. ArrayManipulation1
+Use of unshift, push, pop, shift & for loop to manipulate array.
+Web development tools: JS script in HTML file.
 
 React Projects:
 
