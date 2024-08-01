@@ -24,3 +24,9 @@ React Projects:
 1. mapdata1
 Use of mapping to get data from API(JSON format) and display those data on webpage using list.  
 Web development tools: React, CSS, Bootstrap.
+
+ExpressJS:
+
+1. GetData1
+Use of app.get(), app.post() and app.put() to obtain objects from API. Also use express-validator to validate ID when searching for url of a specific ID and to validate 'name' and 'age' for app.post() and app.put.
+Web development tools: ExpressJS, express-validator

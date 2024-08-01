@@ -1,0 +1,19 @@
+{
+  "name": "expressjstask1_b",
+  "version": "1.0.0",
+  "description": "ExpressJS filter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "Zarina",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "nodemon": "^3.1.4"
+  },
+  "type": "module"
+}
