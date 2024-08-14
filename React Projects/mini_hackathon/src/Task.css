@@ -1,0 +1,260 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* Background */
+    background-image: linear-gradient(120deg, #f6d365, #fda085);
+    color: #333;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh; /* Viewport Height */
+  }
+  
+  /* HEADER */
+  header {
+    font-size: 2rem; /* Slightly larger header */
+    padding: 2rem 0;
+    text-align: center; /* Center the header text */
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    flex-wrap: wrap;
+    
+  }
+  
+  .mainInput {
+    display: flex;
+    margin: 0 0.5rem;
+    flex-direction: row;
+    min-width: 300px;
+  }
+  
+  .prioInput {
+    display: flex;
+    margin: 0 0.5rem;
+    flex-direction: row;
+    min-width: 500px;
+    
+    
+  }
+  
+  form input,
+  form button {
+    padding: 0.75rem; /* Adjust padding for better spacing */
+    font-size: 1.25rem; 
+    border: none;
+    margin: 0 0.5rem; /* Add margin between form elements */
+  }
+  
+  form input {
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  form button {
+    background: #f67280; /* Different color for the button */
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #c0392b; /* Darker shade on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  }
+  
+  
+  /* TODO CONTAINER */
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .todo-list {
+    min-width: 30%;
+    list-style: none;
+  }
+  .todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    padding: 1rem;
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .filter-todo,
+  .filter-priority {
+    padding: 1rem;
+    min-width: 3em;
+  }
+.select-priority {
+    padding: 1rem;
+        
+    }
+
+  .todo li {
+    flex: 1;
+  }
+  
+  /* BUTTONS */
+  .trash-btn,
+  .complete-btn {
+    background: #fe4a49;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .complete-btn {
+    background-color: #06d6a0;
+  }
+  
+  .todo-item {
+    padding: 0rem 0.5rem;
+  }
+  
+  FontAwesomeIcon {
+    pointer-events: none;
+  }
+  
+  .fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  /* CUSTOM SELECTOR */
+  /* Reset the stylings of the select/dropdown. */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+  }
+  
+  /* Custom Select */
+  .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  select {
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+    
+  }
+  
+  /* Arrow */
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: #e70ace;
+    cursor: pointer;
+    pointer-events: none;
+  }
+  
+  .todo.low {
+    border-left: 5px solid green;
+  }
+  
+  .todo.normal {
+    border-left: 5px solid blueviolet;
+  }
+  
+  .todo.high {
+    border-left: 5px solid red;
+  }
+  @media (max-width: 768px) {
+    form {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .mainInput,
+    .prioInput {
+        min-width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .todo-list {
+        min-width: 90%;
+    }
+}
+.todo:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+form button {
+    background: #f67280;
+    color: #fff;
+}
+
+form button:hover {
+    background: #c0392b;
+    color: #fff;
+}
+.todo {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f67280;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+
+
+  
+  /* 
+  Forked of code-along project by OneCode Camp 
+  by Yatt-code 
+  */
