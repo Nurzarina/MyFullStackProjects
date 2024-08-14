@@ -25,6 +25,10 @@ React Projects:
 Use of mapping to get data from API(JSON format) and display those data on webpage using list.  
 Web development tools: React, CSS, Bootstrap.
 
+2. mini_hackathon
+A mini hackathon done in a group of 5. Our group did a task manager where user can enter their tasks and set them to three priorities. The tasks will be displayed to the user after button is clicked and then user can mark them as 'Complete' or delete them using buttons. The code also include dynamic data fetching from OpenWeatherMap.
+Web development tools: React, CSS, Bootstrap.
+
 ExpressJS:
 
 1. GetData1
