@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'; 
 import axios from 'axios'; 
 import { Link } from 'react-router-dom'; 
-import { Container, Row, Col, Table, Button, Card } from 'react-bootstrap';
+import { Container, Table, Button, Card } from 'react-bootstrap';
+import './StudentDisplay.css';
 
 function StudentDisplay() {
     const [student, setStudent] = useState([]); 
@@ -23,7 +24,13 @@ function StudentDisplay() {
     }
 
     return (
-        <Container fluid className='vh-100 d-flex flex-column justify-content-center align-items-center bg-success'>
+        <Container 
+        fluid 
+        className='vh-100 d-flex flex-column justify-content-center align-items-center' 
+        style={{ 
+            background: 'linear-gradient(to right, #56ccf2, #2f80ed)', 
+            color: 'white' 
+        }}>
             <Card className='w-75'>
                 <Card.Header className='text-center'>
                     <h1>Students Information</h1>
