@@ -29,8 +29,14 @@ Web development tools: React, CSS, Bootstrap.
 A mini hackathon done in a group of 5. Our group did a task manager where user can enter their tasks and set them to three priorities. The tasks will be displayed to the user after button is clicked and then user can mark them as 'Complete' or delete them using buttons. The code also include dynamic data fetching from OpenWeatherMap.
 Web development tools: React, CSS, Bootstrap.
 
-ExpressJS:
+ExpressJS Projects:
 
 1. GetData1
 Use of app.get(), app.post() and app.put() to obtain objects from API. Also use express-validator to validate ID when searching for url of a specific ID and to validate 'name' and 'age' for app.post() and app.put.
 Web development tools: ExpressJS, express-validator
+
+MySQL Projects:
+
+1. MySQL_Express_React
+A website where user can do the CRUD operation of students' information.
+Web development tools: MySQL, ExpressJS, ReactJS, CSS, React-Bootstrap, axios, cors.
